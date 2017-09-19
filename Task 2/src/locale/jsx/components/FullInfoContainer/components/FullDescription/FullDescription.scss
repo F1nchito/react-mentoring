@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  &__description{
+    color: #d9d9d9;
+    margin-left: 50px;
+  }
+}
+.description{
+  &__title{
+    color: #f55263;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  &__rating{
+    font-size: 0.7em;
+    color: greenyellow;
+    font-weight: normal;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 20px;
+  }
+  &__category{
+    margin-bottom: 20px;
+  }
+  &__time{
+    color:#ffffff;
+    font-size: 1.3em;
+  }
+  &__full{
+    padding: 25px 0;
+  }
+  &__director, &__cast{
+    color: #a5a5a5;
+  }
+}
+.time__duration{
+  margin-left: 30px;
+}
+

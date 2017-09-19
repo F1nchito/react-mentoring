@@ -15,3 +15,4 @@ server.listen(3000, message =>{
 server.get('/', (req,res)=>{
     res.sendfile(path.join(__dirname, '../locale/index.html'));
 });
+
