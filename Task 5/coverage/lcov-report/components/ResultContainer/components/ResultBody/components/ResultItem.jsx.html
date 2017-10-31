@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/ResultContainer/components/ResultBody/components/ResultItem.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\..\index.html">All files</a> / <a href="index.html">components/ResultContainer/components/ResultBody/components</a> ResultItem.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/7</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { Link } from 'react-router-dom';
+import * as s from './ResultItem.scss';
+&nbsp;
+const genres = [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 16,
+            "name": "Animation"
+        },
+        {
+            "id": 35,
+            "name": "Comedy"
+        },
+        {
+            "id": 80,
+            "name": "Crime"
+        },
+        {
+            "id": 99,
+            "name": "Documentary"
+        },
+        {
+            "id": 18,
+            "name": "Drama"
+        },
+        {
+            "id": 10751,
+            "name": "Family"
+        },
+        {
+            "id": 14,
+            "name": "Fantasy"
+        },
+        {
+            "id": 36,
+            "name": "History"
+        },
+        {
+            "id": 27,
+            "name": "Horror"
+        },
+        {
+            "id": 10402,
+            "name": "Music"
+        },
+        {
+            "id": 9648,
+            "name": "Mystery"
+        },
+        {
+            "id": 10749,
+            "name": "Romance"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        {
+            "id": 10770,
+            "name": "TV Movie"
+        },
+        {
+            "id": 53,
+            "name": "Thriller"
+        },
+        {
+            "id": 10752,
+            "name": "War"
+        },
+        {
+            "id": 37,
+            "name": "Western"
+        }
+    ];
+export default class ResultItem extends React.Component {
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        let item = <span class="cstat-no" title="statement not covered" >this.props.element;</span>
+        let genre = <span class="cstat-no" title="statement not covered" >genres.filter(<span class="fstat-no" title="function not covered" >el</span>em =&gt; <span class="cstat-no" title="statement not covered" >elem.id === item.genre_ids[0])</span>;</span>
+        let year = <span class="cstat-no" title="statement not covered" >item.release_date ? new Date(item.release_date).getFullYear() : new Date(item.first_air_date).getFullYear();</span>
+        let genreName = <span class="cstat-no" title="statement not covered" >genre[0] ? genre[0].name : 'No genre';</span>
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;Link onClick={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >this.props.onClick(item.id)}</span> className={s.links} to={`/film/${item.id}`}&gt;
+            &lt;div className={s.container}&gt;
+                &lt;img className={s.poster} src={item.poster_path ? 'https://image.tmdb.org/t/p/w370_and_h556_bestv2'+item.poster_path : 'http://placehold.it/250x375/'} alt={item.title}/&gt;
+                &lt;div className={s.container__description}&gt;
+                    &lt;div className={s.row}&gt;
+                        &lt;span className={s.description__title}&gt;{item.title}&lt;/span&gt;
+                        &lt;span className={s.description__date}&gt;{year}&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;span className={s.description__genre}&gt;{genreName}&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/Link&gt;
+        )
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 15:38:11 GMT+0400 (Astrakhan Standard Time)
+</div>
+</div>
+<script src="..\..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\..\sorter.js"></script>
+</body>
+</html>
